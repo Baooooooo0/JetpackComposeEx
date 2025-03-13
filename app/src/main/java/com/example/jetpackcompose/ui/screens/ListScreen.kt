@@ -10,6 +10,7 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.MaterialTheme
@@ -51,28 +52,178 @@ fun ListScreen(){
         )
 
         Button(onClick = { },
+                colors = ButtonDefaults.buttonColors(
+                    containerColor = Color(0xFFADD8E6),
+                    contentColor = Color.Black
+                ),
+                shape = RoundedCornerShape(5.dp),
                 modifier = Modifier
                     .fillMaxWidth()
-                    .padding(start = 10.dp, end = 10.dp, top = 0.dp, bottom = 0.dp)
+                    .padding(start = 10.dp, end = 20.dp, top = 5.dp, bottom = 0.dp)
             ) {
                 Column(
                     modifier = Modifier.fillMaxWidth()
                 ) {
                 Text(
                     text = "Text",
-                    fontSize = 15.sp,
+                    fontSize = 20.sp,
                     fontWeight = FontWeight.Bold,
-                    modifier = Modifier
-                        .padding(start = 16.dp)
                 )
 
                 Text(
                     text = "Display Text",
-                    fontSize = 15.sp,
-                    modifier = Modifier
-                        .padding(start = 16.dp)
+                    fontSize = 20.sp,
                 )
             }
         }
+
+        Button(onClick = { },
+            colors = ButtonDefaults.buttonColors(
+                containerColor = Color(0xFFADD8E6),
+                contentColor = Color.Black
+            ),
+            shape = RoundedCornerShape(5.dp),
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(start = 10.dp, end = 20.dp, top = 10.dp, bottom = 0.dp)
+        ) {
+            Column(
+                modifier = Modifier.fillMaxWidth()
+            ) {
+                Text(
+                    text = "Image",
+                    fontSize = 20.sp,
+                    fontWeight = FontWeight.Bold,
+                )
+
+                Text(
+                    text = "Display Image",
+                    fontSize = 20.sp,
+                )
+            }
+        }
+
+        Text(
+            text = "Input",
+            textAlign = TextAlign.Left,
+            fontWeight = FontWeight.Bold,
+            fontSize = 20.sp,
+            modifier = Modifier
+                .padding(start = 8.dp, top = 30.dp)
+        )
+
+        Button(onClick = { },
+            colors = ButtonDefaults.buttonColors(
+                containerColor = Color(0xFFADD8E6),
+                contentColor = Color.Black
+            ),
+            shape = RoundedCornerShape(5.dp),
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(start = 10.dp, end = 20.dp, top = 5.dp, bottom = 0.dp)
+        ) {
+            Column(
+                modifier = Modifier.fillMaxWidth()
+            ) {
+                Text(
+                    text = "TextField",
+                    fontSize = 20.sp,
+                    fontWeight = FontWeight.Bold,
+                )
+
+                Text(
+                    text = "Input for textfield",
+                    fontSize = 20.sp,
+                )
+            }
+        }
+
+        Button(onClick = { },
+            colors = ButtonDefaults.buttonColors(
+                containerColor = Color(0xFFADD8E6),
+                contentColor = Color.Black
+            ),
+            shape = RoundedCornerShape(5.dp),
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(start = 10.dp, end = 20.dp, top = 10.dp, bottom = 0.dp)
+        ) {
+            Column(
+                modifier = Modifier.fillMaxWidth()
+            ) {
+                Text(
+                    text = "PasswordField",
+                    fontSize = 20.sp,
+                    fontWeight = FontWeight.Bold,
+                )
+
+                Text(
+                    text = "Input for passwords",
+                    fontSize = 20.sp,
+                )
+            }
+        }
+
+        Text(
+            text = "Layout",
+            textAlign = TextAlign.Left,
+            fontWeight = FontWeight.Bold,
+            fontSize = 20.sp,
+            modifier = Modifier
+                .padding(start = 8.dp, top = 30.dp)
+        )
+
+        Button(onClick = { },
+            colors = ButtonDefaults.buttonColors(
+                containerColor = Color(0xFFADD8E6),
+                contentColor = Color.Black
+            ),
+            shape = RoundedCornerShape(5.dp),
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(start = 10.dp, end = 20.dp, top = 5.dp, bottom = 0.dp)
+        ) {
+            Column(
+                modifier = Modifier.fillMaxWidth()
+            ) {
+                Text(
+                    text = "Column",
+                    fontSize = 20.sp,
+                    fontWeight = FontWeight.Bold,
+                )
+
+                Text(
+                    text = "Arranges elements vertically",
+                    fontSize = 20.sp,
+                )
+            }
+        }
+
+        Button(onClick = { },
+            colors = ButtonDefaults.buttonColors(
+                containerColor = Color(0xFFADD8E6),
+                contentColor = Color.Black
+            ),
+            shape = RoundedCornerShape(5.dp),
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(start = 10.dp, end = 20.dp, top = 10.dp, bottom = 0.dp)
+        ) {
+            Column(
+                modifier = Modifier.fillMaxWidth()
+            ) {
+                Text(
+                    text = "Row",
+                    fontSize = 20.sp,
+                    fontWeight = FontWeight.Bold,
+                )
+
+                Text(
+                    text = "Arranges elements horizontally",
+                    fontSize = 20.sp,
+                )
+            }
+        }
+
     }
 }
