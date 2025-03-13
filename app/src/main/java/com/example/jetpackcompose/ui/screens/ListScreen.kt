@@ -14,10 +14,11 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.navigation.NavController
 
 
 @Composable
-fun ListScreen(){
+fun ListScreen(navController: NavController){
     Column {
         Text(
             text = "UI Components List",
@@ -27,6 +28,7 @@ fun ListScreen(){
             fontWeight = FontWeight.Bold,
             modifier = Modifier
                 .fillMaxWidth()
+                .padding(top = 40.dp)
                 .padding(15.dp)
         )
 

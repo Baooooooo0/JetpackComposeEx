@@ -1,5 +1,6 @@
 package com.example.jetpackcompose.ui.screens
 
+import android.provider.CalendarContract.Colors
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -20,11 +21,12 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.navigation.NavController
 import com.example.jetpackcompose.R
 
 
 @Composable
-fun StartScreen(){
+fun StartScreen(navController: NavController){
     Column {
         Box(
             modifier = Modifier.padding(50.dp)
@@ -48,6 +50,7 @@ fun StartScreen(){
         Text(
             text = "Jetpack Compose is a modern UI toolkit for building native Android applications using a declarative programming approach.",
             fontSize = 20.sp,
+            color = Color.Gray,
             textAlign = TextAlign.Center,
             modifier = Modifier.padding(25.dp)
         )
@@ -56,7 +59,7 @@ fun StartScreen(){
             modifier = Modifier.fillMaxSize(),
             contentAlignment = Alignment.Center
         ){Button(
-            onClick = { /* Xử lý sự kiện */ },
+            onClick = { navController.navigate("list") },
             colors = ButtonDefaults.buttonColors(
                 containerColor = Color(0xFF42AFFF),
                 contentColor = Color.White
