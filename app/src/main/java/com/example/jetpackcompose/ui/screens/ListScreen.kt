@@ -42,7 +42,7 @@ fun ListScreen(navController: NavController){
                 .padding(top = 25.dp)
         )
 
-        Button(onClick = { },
+        Button(onClick = {navController.navigate("text") },
                 colors = ButtonDefaults.buttonColors(
                     containerColor = Color(0xFF42AFFF),
                     contentColor = Color.Black
@@ -72,7 +72,7 @@ fun ListScreen(navController: NavController){
             }
         }
 
-        Button(onClick = { },
+        Button(onClick = {navController.navigate("image") },
             colors = ButtonDefaults.buttonColors(
                 containerColor = Color(0xFF42AFFF),
                 contentColor = Color.Black

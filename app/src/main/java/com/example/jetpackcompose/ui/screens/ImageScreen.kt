@@ -22,7 +22,7 @@ import androidx.navigation.NavHostController
 import com.example.jetpackcompose.R
 
 @Composable
-fun TextScreen(navController: NavHostController) {
+fun ImageScreen(navController: NavHostController) {
     Column {
         Box {
             Button(
@@ -45,7 +45,7 @@ fun TextScreen(navController: NavHostController) {
     }
     Column {
         Text(
-            text = "Text Detail",
+            text = "Image Detail",
             fontSize = 30.sp,
             textAlign = TextAlign.Center,
             color = Color(0xFF42AFFF),
@@ -70,3 +70,5 @@ fun TextScreen(navController: NavHostController) {
         }
     }
 }
+
+
