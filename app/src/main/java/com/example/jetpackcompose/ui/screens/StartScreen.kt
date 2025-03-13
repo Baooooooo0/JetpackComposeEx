@@ -58,14 +58,14 @@ fun StartScreen(){
         ){Button(
             onClick = { /* Xử lý sự kiện */ },
             colors = ButtonDefaults.buttonColors(
-                containerColor = Color.Blue,
+                containerColor = Color(0xFF42AFFF),
                 contentColor = Color.White
             ),
             modifier = Modifier
                 .padding(bottom = 40.dp)
                 .align(Alignment.BottomCenter)
                 .fillMaxWidth()
-                .padding(start = 25.dp, end = 25.dp)
+                .padding(start = 25.dp, end = 25.dp, bottom = 20.dp)
                 .height(50.dp)
         ) {
             Text(
