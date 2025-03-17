@@ -22,6 +22,8 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
 import com.example.jetpackcompose.R
+//import com.example.jetpackcompose.ui.Poppins
+//import com.example.jetpackcompose.ui.Roboto
 
 
 @Composable
@@ -42,6 +44,7 @@ fun StartScreen(navController: NavController){
             text = "Jetpack Compose",
             fontSize = 25.sp,
             fontWeight = FontWeight.Bold,
+//            fontFamily = Poppins,
             textAlign = TextAlign.Center,
             modifier = Modifier.fillMaxWidth()
         )
@@ -50,6 +53,7 @@ fun StartScreen(navController: NavController){
             text = "Jetpack Compose is a modern UI toolkit for building native Android applications using a declarative programming approach.",
             fontSize = 20.sp,
             color = Color.Gray,
+//            fontFamily = Poppins,
             textAlign = TextAlign.Center,
             modifier = Modifier.padding(25.dp)
         )
@@ -57,7 +61,8 @@ fun StartScreen(navController: NavController){
         Box(
             modifier = Modifier.fillMaxSize(),
             contentAlignment = Alignment.Center
-        ){Button(
+        ){
+            Button(
             onClick = { navController.navigate("list") },
             colors = ButtonDefaults.buttonColors(
                 containerColor = Color(0xFF42AFFF),
@@ -72,8 +77,9 @@ fun StartScreen(navController: NavController){
         ) {
             Text(
                 text = "I'm Ready",
-                fontSize = 20.sp
-            )
+                fontSize = 20.sp,
+//                fontFamily = Roboto
+                )
             }
         }
     }

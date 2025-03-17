@@ -111,7 +111,7 @@ fun ListScreen(navController: NavController){
                 .padding(start = 8.dp, top = 30.dp)
         )
 
-        Button(onClick = { },
+        Button(onClick = {navController.navigate("text_field") },
             colors = ButtonDefaults.buttonColors(
                 containerColor = Color(0xFF42AFFF),
                 contentColor = Color.Black
@@ -133,7 +133,7 @@ fun ListScreen(navController: NavController){
                 )
 
                 Text(
-                    text = "Input for textfield",
+                    text = "Input for Textfield",
                     fontSize = 20.sp,
                     modifier = Modifier
                         .padding(bottom = 5.dp)
