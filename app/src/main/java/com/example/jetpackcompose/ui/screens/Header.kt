@@ -33,7 +33,7 @@ fun Header(navHostController: NavHostController,detail: String){
                 ),
                 modifier = Modifier
                     .align(Alignment.TopStart)
-                    .padding(top = 40.dp, start = 5.dp, end = 15.dp, bottom = 15.dp)
+                    .padding(top = 25.dp, start = 5.dp, end = 15.dp, bottom = 15.dp)
             )
             {
                 Text(
@@ -49,7 +49,7 @@ fun Header(navHostController: NavHostController,detail: String){
                 fontWeight = FontWeight.Bold,
                 modifier = Modifier
                     .fillMaxWidth()
-                    .padding(15.dp, top = 55.dp)
+                    .padding(top = 40.dp)
             )
         }
     }

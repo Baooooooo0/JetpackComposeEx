@@ -13,6 +13,5 @@ fun AppNavigation() {
         composable("list") { ListScreen(navController) }
         composable("text") { TextScreen(navController) }
         composable("image") { ImageScreen(navController)}
-        composable("text_filed") { TextField(navController)}
     }
 }
